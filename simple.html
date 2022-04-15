@@ -1,48 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head lang="en-vi">
+<html lang="en-vi">
+<head>
 	<meta charset="UTF-8">
+	<meta name="description"content="This is an awsome website">
+	<meta name="viewport" content="width=device=width, initial-scale=1">
 	<title>Cam's Website</title>
 	<style>
-		img
-		{
-			border-radius: 50%;
+		/*Internal CSS(style)*/
+		body{
+			background-color: rgba(81, 191, 137, 0.8);
+			font-family: 'Garamond', serif;
+			background-image: url('https://wallpaperaccess.com/full/38123.jpg');
+		}
+		h1{
+			align-items: flex-end;
+			color: royalblue;
+			padding: 30px;
+		}
+		h2{
+			border: 2px solid greenyellow;
+			margin: 50px;
+		}
+		p{
+			color: burlywood;
+			font-family: monospace;
+			font-size: 100%;
+		}
+
+		/*Link colors*/
+		a:link{
+			color: skyblue;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited{
+			color: darkorange;
+			background-color: transparent;
+			/*Remove the underline*/
+			text-decoration: none;
+		}
+		a:hover{
+			color: blueviolet;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		a:active{
+			color: lightgoldenrodyellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		button{
+			color: royalblue;
+			background-color: paleturquoise;
 		}
 	</style>
 </head>
-<body style="background-color: green;">
+<body>
 	<header>
-		<h1 style="color: royalblue;">
-		Simple Website
-		</h1>
-
+		<!--This is image with heading-->
+		<p>
+			<img src="https://media1.giphy.com/media/JPb0gtY8CNU3EW3QvS/giphy.gif?cid=ecf05e47w7x8ch0026ogy6jcedys4z0ns4ec1dwm8jkkhmj7&rid=giphy.gif&ct=g" alt="Chika Fujiwara" style="border-radius: 50%;float: left;width: 90px;height: 90px;">
+			<h1 style="color: royalblue;">
+			<!--Inline CSS(style)-->
+			Simple Website
+			</h1>
+		</p>
+			
 	</header>
 	<main>
-		<a href="https://www.youtube.com/watch?v=c4ezoUFnnW8">
-			<img src="http://lol-stats.net/uploads/35nLxtHstuKIj2v3O93xe77u6ywDmwNbumHcI3Vb.jpeg" alt="Kawai Neeko" width="100" height="150">
-		</a>
+		
 		<br/>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/NA6WfQSfQr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<br/>
-		<input value="Enter your champion" type="text">
-		<a href="https://www.youtube.com/watch?v=2Mvh5mgbXHo">
-			<input type="submit"/>
-		</a>
-		<input name="btn" type="radio">
-		<input name="btn" type="radio">
+		<!--This is video in folder and thumbnail(79-81)-->
+		<video src="Genshin Impact 2022.03.05 - 21.07.48.01.mp4" poster="https://1.bp.blogspot.com/-TuI4qqk3Ccs/YQoNNtKqvtI/AAAAAAAAJug/AVqRgLa1GZgquro1VzDCm68tQLKX7QeHACPcBGAsYHg/w348-h195-p-k-no-nu/sunset-ocean-beautiful-scenery-4k-uhdpaper.com-418.0_b-thumbnail.jpg" controls></video>
+		<hr/>
+		<picture>
+			<source media="(min-width: 750px)" srcset="https://image.shutterstock.com/image-illustration/flag-usa-260nw-106649108.jpg" alt="USA">
+			<source media="(min-width: 750px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuL87nFbvnOtz9wle3GRoOi0lcZ37JYS-AIqrem8UMTaVCreHRRQEfcek8IrgNShuCzQ&usqp=CAU" alt="VN">
+			<img src="https://m.media-amazon.com/images/I/712Ub5FLAJL._AC_SY450_.jpg" style="width:auto;" alt="USAmap">
+		</picture>
+			
+
+			<button type="button">Don't click me!!!</button>
+		
 	</main>
 
 	<footer>
-		<h2 style="color:royalblue;">My address</h2>
+		<p>
+			<!--This is gif(62-64)-->
+			<img src="https://media4.giphy.com/media/a6pzK009rlCak/giphy.gif?cid=790b7611518f6cb2a6107ecc8b58ccc35b23e0004c4bd94f&rid=giphy.gif&ct=g" alt="st cute:3" style="float: left;width: 36px; height: 36px;">
+			<img src="https://i.pinimg.com/originals/9e/a7/2e/9ea72ef078139ced289852e8a4ea0c5c.gif" alt="Another st cute:3" style="float: left;width: 36px; height: 36px;">
+			<h2 style="color:royalblue;">My address</h2>
+		</p>
 		<ol>
 			<li>
-				<a href="#" target="_self">Reddit</a>
+				<a href="https://www.reddit.com/user/CamNA12" target="_self;" title="Click for more detailed"><i>Reddit</i></a>
 			</li>
 			<li>
-				<a href="#" target="_self">Facebook</a>
+				<a href="https://www.facebook.com/profile.php?id=100017983545711" target="_self;" title="Click for more detailed"><i>Facebook</i></a>
 			</li>
 			<li>
-				<a href="#" target="_self">Twitter</a>
+				<a href="https://twitter.com/home" target="_self;" title="Click for more detailed;"><i>Twitter</i></a>
 			</li>
 		</ol>
 	</footer>
